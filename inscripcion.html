@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inscripcion - LiveStage Events</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>LiveStage Events</h1>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="about.html">About Us</a> |
+        <a href="inscripcion.html">Inscripcion</a>
+    </nav>
+</header>
+
+<main>
+    <section id="inscripcion">
+        <h2>Formulario de Inscripcion</h2>
+        <form action="#" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890" required />
+
+            <fieldset>
+                <legend>Genero:</legend>
+
+                <input type="radio" id="hombre" name="genero" value="Hombre" />
+                <label for="hombre">Hombre</label><br />
+
+                <input type="radio" id="mujer" name="genero" value="Mujer" />
+                <label for="mujer">Mujer</label><br />
+
+                <input type="radio" id="otro" name="genero" value="Otro" />
+                <label for="otro">Otro</label>
+            </fieldset>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" max="120" />
+
+            <label for="entrada">Tipo de entrada:</label>
+            <select id="entrada" name="entrada">
+                <option value="general">General</option>
+                <option value="vip">VIP</option>
+                <option value="meet">Meet & Greet</option>
+            </select>
+
+            <fieldset>
+                <legend>Selecciona los eventos a los que deseas asistir:</legend>
+
+                <input type="checkbox" id="rockfest" name="evento" value="Rock Fest 2025" />
+                <label for="rockfest">Rock Fest 2025</label><br />
+
+                <input type="checkbox" id="jazznight" name="evento" value="Jazz Night Live" />
+                <label for="jazznight">Jazz Night Live</label><br />
+
+                <input type="checkbox" id="indiesunset" name="evento" value="Indie Sunset" />
+                <label for="indiesunset">Indie Sunset</label><br />
+
+                <input type="checkbox" id="electrobeats" name="evento" value="Electro Beats Festival" />
+                <label for="electrobeats">Electro Beats Festival</label>
+            </fieldset>
+
+            <label for="comentarios">Comentarios o peticiones especiales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tus comentarios..."></textarea>
+
+            <input type="checkbox" id="terminos" name="terminos" required />
+            <label for="terminos">Acepto la política de privacidad y términos de uso.</label>
+
+            <button type="submit" class="btn">Enviar</button>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 LiveStage Events</p>
+</footer>
+
+</body>
+</html>
